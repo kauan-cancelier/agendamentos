@@ -1,8 +1,7 @@
 package com.cancelier.agendamentos.controller;
 
 import com.cancelier.agendamentos.service.BaseService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 public class BaseController<T, ID> {
 
@@ -14,7 +13,17 @@ public class BaseController<T, ID> {
 
     @PostMapping
     public T salvar(@RequestBody T t) {
-        return  baseService.salvar(t);
+        return baseService.salvar(t);
+    }
+
+    @GetMapping("/{id}")
+    public T buscarPorId(@PathVariable(name = "id") ID id) {
+        return baseService.buscarPorId(id);
+    }
+
+    @DeleteMapping("/{id}")
+    public T deletarPorId(@PathVariable(name = "id") ID id) {
+        return baseService.excluir(id);
     }
 
 }
