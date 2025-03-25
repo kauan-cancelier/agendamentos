@@ -1,4 +1,4 @@
-package com.cancelier.agendamentos.domain;
+package com.cancelier.agendamentos.domain.Usuario;
 
 
 import jakarta.persistence.*;
@@ -24,10 +24,6 @@ public class Usuario {
 
     @Column
     private String cpf;
-
-    @Column
-    @Enumerated(EnumType.STRING)
-    private TipoUsuario tipoUsuario;
 
     @Column(nullable = false)
     private String email;

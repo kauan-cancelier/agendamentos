@@ -1,4 +1,4 @@
-package com.cancelier.agendamentos.domain;
+package com.cancelier.agendamentos.domain.Usuario;
 
 public enum TipoUsuario {
     ADMIN,
