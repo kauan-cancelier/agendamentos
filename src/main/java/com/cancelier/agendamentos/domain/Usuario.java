@@ -25,6 +25,10 @@ public class Usuario {
     @Column
     private String cpf;
 
+    @Column
+    @Enumerated(EnumType.STRING)
+    private TipoUsuario tipoUsuario;
+
     @Column(nullable = false)
     private String email;
 
