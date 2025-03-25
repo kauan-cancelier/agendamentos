@@ -1,6 +1,6 @@
-package com.cancelier.agendamentos.controller;
+package com.cancelier.agendamentos.controller.base;
 
-import com.cancelier.agendamentos.service.BaseService;
+import com.cancelier.agendamentos.service.base.BaseService;
 import org.springframework.web.bind.annotation.*;
 
 public class BaseController<T, ID> {

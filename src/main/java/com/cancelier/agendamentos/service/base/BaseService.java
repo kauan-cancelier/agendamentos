@@ -1,4 +1,4 @@
-package com.cancelier.agendamentos.service;
+package com.cancelier.agendamentos.service.base;
 
 public interface BaseService<T, ID> {
 

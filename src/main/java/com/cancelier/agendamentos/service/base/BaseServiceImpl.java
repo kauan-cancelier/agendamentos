@@ -1,8 +1,7 @@
-package com.cancelier.agendamentos.service;
+package com.cancelier.agendamentos.service.base;
 
 import com.cancelier.agendamentos.exceptions.RegistroNaoEncontradoException;
 import com.google.common.base.Preconditions;
-import org.hibernate.ObjectNotFoundException;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public class BaseServiceImpl<T, ID, R extends JpaRepository<T, ID>> implements BaseService<T, ID> {
